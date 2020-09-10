@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="103.0" prefWidth="600.0" style="-fx-background-radius: 15;" AnchorPane.bottomAnchor="297.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="TOP_CENTER" style="-fx-background-color: white; -fx-background-radius: 15 15 0 0;">
+               <children>
+                  <Label text="Save to">
+                     <font>
+                        <Font name="Calibri" size="34.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="34.0" opacity="0.76" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/save.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
+                  </Label>
+                  <TextField prefHeight="30.0" prefWidth="204.0" promptText="New..." style="-fx-background-color: #72aced; -fx-background-radius: 0; -fx-prompt-text-fill: gray;" HBox.hgrow="NEVER">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="7.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow color="#0000007c" height="5.93" radius="4.0075" width="12.1" />
+                     </effect>
+                  </TextField>
+                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="112.0" style="-fx-background-insets: 7; -fx-background-color: #3293ed; -fx-background-radius: 0;" text="Create" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="22.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow color="#0000007c" height="5.93" radius="4.0075" width="12.1" />
+                     </effect>
+                  </Button>
+                  <Button mnemonicParsing="false" stylesheets="@close.css">
+                     <graphic>
+                        <ImageView fitHeight="46.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/closeButton.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <effect>
+                  <DropShadow color="#757575" height="32.86" offsetY="10.0" radius="12.965" />
+               </effect>
+            </HBox>
+            <Line endX="498.0" startX="-100.0" stroke="#bfbfbf" strokeWidth="2.0" />
+            <HBox prefHeight="46.0" prefWidth="590.0" spacing="20.0">
+               <children>
+                  <Label text="Previous Games">
+                     <font>
+                        <Font name="Leelawadee UI" size="27.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets top="3.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="3.0" />
+               </padding>
+            </HBox>
+            <Line endX="498.0" startX="-100.0" stroke="#bfbfbf" strokeWidth="2.0" />
+         </children>
+      </VBox>
+      <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" layoutY="100.0" prefHeight="300.0" prefWidth="600.0" stylesheets="@scrollpane.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="110.0">
+         <content>
+            <VBox prefHeight="200.0" prefWidth="598.0" style="-fx-background-color: white;" />
+         </content>
+         <effect>
+            <DropShadow color="#5e5e5e" height="18.03" radius="8.515" width="18.03" />
+         </effect>
+      </ScrollPane>
+   </children>
+</AnchorPane>
